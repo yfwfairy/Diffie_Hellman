@@ -5,7 +5,7 @@ public class LargePrime {
 	public static BigInteger generatePrime() {
 		Random rnd = new Random();
 		BigInteger q;
-		q = BigInteger.probablePrime(34, rnd);
+		q = BigInteger.probablePrime((int) (UI.getBit()*3.322), rnd);
 		return q;
 	}
 }
